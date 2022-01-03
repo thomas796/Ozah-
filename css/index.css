@@ -1,0 +1,69 @@
+
+#home {
+    height: calc(100vh - 60px);    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#logoCoffee {
+    height: 100%;
+    width: 40%;
+    object-fit:scale-down;
+}
+
+#sceneDeVie {
+    margin-left: 10%;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#sceneDeVieImg {
+    width: 60%;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+#sceneDeVieText {
+    font-family: "MinionPro-Medium";
+    color: black;
+    width: 90%;
+    max-width: 650px;
+    font-size: large;
+}
+
+#sceneDeVieTitle {
+    font-family: "savoye";
+    color: #3D3E3F;
+    font-size: 130px;
+    margin: 0px;
+}
+
+#news {
+    height: 100vh;
+    background-color: white;
+}
+
+#presentation {
+    height: 100vh;
+    background-color: #ABB4C2;
+}
+
+
+#logoCoffeeGray {
+    /* height: 100%;
+    width: 40%; */
+    object-fit:scale-down;
+    position:absolute;
+    top: 100vh;
+    width: 40%;
+    height: 100vh;
+    transform: scaleX(-1);
+}

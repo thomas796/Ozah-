@@ -1,0 +1,31 @@
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+
+#navigation {
+    margin-right: 20px;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigationTitle {
+    color: black;
+    text-decoration: none;
+    font-family: "MinionPro-Medium";
+    text-transform: uppercase;
+}
+
+#logo {
+    width: 150px;
+    margin-left: 20px;
+}
+
+#underlineTitle {
+    text-decoration: underline;
+}
