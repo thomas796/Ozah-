@@ -1,0 +1,83 @@
+
+@font-face {
+    font-family: "MinionPro-Medium";
+    src: url("../font/MinionPro/MinionPro-Medium.ttf");
+  }
+
+
+html {
+    background-color: #e7d9c8;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+#navigation {
+    margin-right: 20px;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigationTitle {
+    color: black;
+    text-decoration: none;
+    font-family: "MinionPro-Medium";
+    text-transform: uppercase;
+}
+
+#logo {
+    width: 150px;
+    margin-left: 20px;
+}
+
+main {
+    height: 90vh;
+}
+
+#home {
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#logoCoffee {
+    height: 90%;
+    width: 40%;
+    object-fit:scale-down;
+}
+
+#sceneDeVie {
+    margin-left: 8%;
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+#sceneDeVieImg {
+    width: 60%;
+    max-width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+
+#sceneDeVieText {
+    font-family: "MinionPro-Medium";
+    color: black;
+    width: 90%;
+    max-width: 650px;
+    font-size: large;
+}
