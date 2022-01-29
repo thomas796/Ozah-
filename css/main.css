@@ -5,17 +5,39 @@
   }
 
 @font-face {
+    font-family: "MinionPro-BoldIt";
+    src: url("../font/MinionPro/MinionPro-BoldIt.ttf");
+  }
+
+@font-face {
     font-family: "savoye";
     src: url("../font/SavoyeStdRegular.otf");
   }
 
 
+
 html {
-    background-color: #e7d9c8;
+    background-color: white;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0px;
 }
 
+
+.callToAction {
+    width: 200px;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #915833;
+    border: none;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    color: white;
+}
+
+.callToAction:hover {
+    opacity: 50%;
+}
 

@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="footer.js"></script>
     <title>Ozahé</title>
 </head>
 <body>
@@ -24,43 +26,106 @@
         </div>
     </header>
 
-    <main>
         <section id="home">
-            <div id="sceneDeVie">
-
-                <h1 id="sceneDeVieTitle">Scène de vie</h1>
-                <p id="sceneDeVieText">Ozahé est un partage de scènes de vie, à reproduire selon l’envie.<br>C’est un peu de moi, un peu de vous, un petit tout, gourmand et coloré, composé au gré des saisons.<br>Ozahé, c’est une parenthèse authentique qui nourrit les coeurs, en couleur !</p>
+            <div id="homeTitleContainer">
+                <h1 id="homeTitle">Scènes de vie</h1>
+                <p id="homeText">Ozahé est un partage de scènes de vie, à reproduire selon l’envie.<br>C’est un peu de moi, un peu de vous, un petit tout, gourmand et coloré, composé au gré des saisons.<br>Ozahé, c’est une parenthèse authentique qui nourrit les coeurs, en couleur !</p>
+                <button class="callToAction" onclick="knowMore()">Découvrir</button>
             </div>
-            <img id="logoCoffee" src="Image/logoCoffee.png" alt="logo Ozahé">
+            <img id="homeImage" src="Image/logoCoffee.png" alt="logo Ozahé">
+        </section>
+
+        <section id="LastPublication">
+            <img id="LastPublicationImage" src="Image/Rencontres - Episode 1.jpg" alt="À la une">
+            
+            <div id="publicationContainer">
+
+                <div id=publicationTitleContainer>
+                    <h1 id="publicationTitle">À LA UNE</h1>
+                    <div id="publicationLine"></div>
+                </div>
+                <h2 id="publicationSubtitle">[Rencontres en cuisine]</h2>
+                <h3 id="publicationContent">Épisode 1 - Avec Antoine</h3>
+                <a id="publicationButton" href="rencontres.html">À déguster</a>
+            </div>
         </section>
 
         <section id="news">
-            <img id="logoCoffeeGray" src="Image/logoCoffeGray.png" alt="logo Ozahé">
-
-            les nouveautés
+            <div id="newsTitleContainer">
+                <div class="newsLine"></div>
+                <h1 id="newsTitle">DERNIÈRES ACTUALITÉS</h1>
+                <div class="newsLine"></div>
+            </div>
+            <div id="newsContainers">
+                <div id="newsContainer">
+                    <img class="newsImage" src="Image/Galerie - Jus de pamplemousse.jpg" alt="À la une">
+                    <h2 class="newsSubtitle">[Galerie]</h2>
+                    <p class="newsText">Des agrumes et du soleil en ces
+                        premiers jours d’automne avec un jus pressé pamplemousse et
+                        citron ! Une boisson…
+                    </p>
+                    <a class="newsLink" href="galerie.html">Lire la suite</a>
+                </div>
+                <div id="newsContainer">
+                    <img class="newsImage" src="Image/Recette - Crêpe.jpg" alt="À la une">
+                    <h2 class="newsSubtitle">[Recette]</h2>
+                    <p class="newsText">Des crêpes pour le plaisir des
+                        petit.e.s et des grand.e.s, avec sa coulée de nutella pour les plus
+                        gourmandes…
+                    </p>
+                    <a class="newsLink" href="recettes.html">Lire la suite</a>
+                </div>
+            </div>
             
         </section>
 
         <section id="presentation">
-            hello, I m Lustucrette :)
+            <div id="presentationTitleContainer">
+                <div class="presentationLine"></div>
+                <h1 id="presentationTitle">DERRIÈRE L'OBJECTIF</h1>
+                <div class="presentationLine"></div>
+            </div>
+
+            <div id="presentationTextContainer">
+                <img id="presentationImage" src="Image/Derrière l'objectif.jpg" alt="À la une">
+                <!-- <div> -->
+                <h2 id="publicationSubtitle">« Il est l’heure de se mettre à table »</h2>
+    
+                <p class="presentationText">
+                    Ce n’est jamais facile de se présenter, surtout par écrit !
+                    Alors, faisons simple.
+                </p>
+                <p class="presentationText">
+                    Je m’appelle Lucie, j’ai 28 ans. Nantaise d’origine et
+                    Parisienne d’adoption depuis 2016, j’ai depuis très
+                    longtemps un friand appétit pour la photographie, la food
+                    (cela va sans dire) mais également la décoration
+                    d’intérieur (comprenant l’art de la table).
+                </p>
+                <p class="presentationText">
+                    C’est pourquoi j’ai créé Ozahé. Une sorte de puzzle
+                    gourmand, mettant en scènes des moments de vie, sans
+                    chichis, à consommer sans modération !
+                </p>
+                <p class="presentationText">
+                    Ici, vous retrouverez une dose de clichés saupoudrés de Rencontres et de quelques idées recettes. Un vrai menu entrée/plat/dessert comme on aime !
+                </p>
+                <p class="presentationText">
+                    Au plaisir de vous lire et vous découvrir.
+                </p>
+                <p class="presentationText">
+                    Je vous souhaite, un bon appétit J 
+                <p class="presentationText">
+                        Lucie
+                </p>
+                <!-- </div> -->
+            </div>
         </section>
 
-    </main>
 
 
+    <script>setFooter()</script>
 
-    <footer>
-        <img id="OzaheWhite" src="Image/OzaheWhite.png" alt="copyright">
-        <section id="footerLink">
-            <a href="https://www.instagram.com/ozahe__/?hl=fr" target="_blank"><img id="instaLogo" src="Image/instaWhite.png" alt="logo instagram"></a>
-            <a class="contactLink" href="https://www.instagram.com/ozahe__/?hl=fr" target="_blank">Suivez-nous </a>
-            <a class="contactLink" href="contact.html">Contactez-nous</a>
-        </section>
-        <section id="copyright">
-            <img id="copyrightImg" src="Image/copyrightGray.png" alt="copyright">
-            <p id="copyrightText">Copyright 2021 Ozahé. All rights reserved</p>
-        </section>
-    </footer>
     
     </body>
     
