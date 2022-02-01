@@ -70,15 +70,15 @@
 
 #toMeet {
     display: block;
-    width: 600px;
-    height: 60px;
+    width: 400px;
+    height: 50px;
     border: 3px solid #BA8F7D;
     background-color: transparent;
-    margin-left: calc(50% - 300px);
+    margin-left: calc(50% - 200px);
     margin-top: 40px;
     margin-bottom: 70px;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     text-decoration: none;
     color: #BA8F7D;
     font-family: Bahnschrift;
@@ -86,12 +86,12 @@
 }
 
 .imageRencontres {
-    animation: 800ms linear 0s 1 imageLagApparition;
+    /* animation: 800ms linear 0s 1 imageLagApparition; */
     width: 80%;
 }
 
-@keyframes imageLagApparition {
+/* @keyframes imageLagApparition {
      0% { opacity: 0%; }
      50% { opacity: 0%; }
      100% {opacity: 100%;}
-}
+} */
