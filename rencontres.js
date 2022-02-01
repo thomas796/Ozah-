@@ -2,6 +2,8 @@
 const episodeArray = [
     ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
     ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
     ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"]
 ]
 
@@ -9,23 +11,36 @@ const episodeArray = [
 
 function setEpisode() {
 
-    for (const element of episodeArray) {
-        console.log(element)
-
-        const image = document.createElement('image')
-        image.src = ".../"+element[0]
-        image.style.height = "100px"
-        image.style.width = "100px"
-        document.getElementById("rencontresContainer").appendChild(image)
-
-        const episodeTitle = document.createElement('image')
-        episodeTitle.textContent = element[1]
-        episodeTitle.style.height = "100px"
-        episodeTitle.style.width = "100px"
-        document.getElementById("rencontresContainer").appendChild(episodeTitle)
-
+    for (let [index, element] of episodeArray.entries()) {
+  
+        let container = document.createElement('div')
+        container.id = "container"
+        document.getElementById("rencontresContainer").appendChild(container)
         
+        let image = document.createElement('img')
+        image.src = element[0]
+        image.className = "imageRencontres"
+        container.appendChild(image)
+
+        const episodeTitle = document.createElement('h1')
+        episodeTitle.textContent = "[" + element[1] + "]"
+        episodeTitle.id = "episodeTitle"
+        container.appendChild(episodeTitle)
+
+        const name = document.createElement('h2')
+        name.textContent = element[2]
+        name.id = "episodeName"
+        container.appendChild(name)
+
+        if (episodeArray.length-1 === index) {
+            for (i = 0; i < 10; i ++) {
+                let empty = document.createElement('div')
+                empty.id = "episodeEmpty"
+                document.getElementById("rencontresContainer").appendChild(empty)
+            }
+        }
+
     }
-
-
 }
+
+

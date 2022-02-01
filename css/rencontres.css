@@ -1,14 +1,12 @@
 #rencontres {
     padding-top: 100px;
-    height: 400vh;
-
 }
 
 
 #rencontresTitleContainer {
     display: flex;
     align-items: center;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 #rencontresTitle {
     font-family: Bahnschrift;
@@ -26,12 +24,74 @@
     background-color: #BA8F7D;
 }
 
-#frameRecontres {
-    display: block;
-    margin-left: 150px;
-    width: 100%;
-    background-color: darkblue;
-    margin: auto;
-    height: calc(100% - 300px);
+#rencontresContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 96%;
+    margin-left: 2%;
 }
 
+#container {
+    width: 28%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+#episodeTitle {
+    font-family: Bahnschrift;
+    font-size: x-large;
+    font-weight: 800;
+    color: #915833;
+    text-align: center;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#episodeName {
+    font-family: Bahnschrift;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#episodeEmpty {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 28%;
+}
+
+#toMeet {
+    display: block;
+    width: 600px;
+    height: 60px;
+    border: 3px solid #BA8F7D;
+    background-color: transparent;
+    margin-left: calc(50% - 300px);
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    color: #BA8F7D;
+    font-family: Bahnschrift;
+    font-size: x-large;
+}
+
+.imageRencontres {
+    animation: 800ms linear 0s 1 imageLagApparition;
+    width: 80%;
+}
+
+@keyframes imageLagApparition {
+     0% { opacity: 0%; }
+     50% { opacity: 0%; }
+     100% {opacity: 100%;}
+}
