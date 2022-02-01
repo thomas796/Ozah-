@@ -10,11 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script type="text/javascript" src="functions.js"></script>
+    <script type="text/javascript" src="headerFunctions.js"></script>
     <script type="text/javascript" src="footer.js"></script>
     <title>Ozahé</title>
 </head>
 <body>
-    <header>
+    <header id="myHeader">
         <a href="index.html">
             <img id="logo" href="index.html" src="Image/logo.png" alt="logo Ozahé">
         </a>
@@ -24,15 +25,15 @@
             <a class="navigationTitle" href="recettes.html">Recettes</a>
             <a class="navigationTitle" href="contact.html">Contact</a>
         </div>
+
     </header>
 
         <section id="home">
             <div id="homeTitleContainer">
                 <h1 id="homeTitle">Scènes de vie</h1>
                 <p id="homeText">Ozahé est un partage de scènes de vie, à reproduire selon l’envie.<br>C’est un peu de moi, un peu de vous, un petit tout, gourmand et coloré, composé au gré des saisons.<br>Ozahé, c’est une parenthèse authentique qui nourrit les coeurs, en couleur !</p>
-                <button class="callToAction" onclick="knowMore()">Découvrir</button>
+                <!-- <button class="callToAction" onclick="discover()">Découvrir</button> -->
             </div>
-            <img id="homeImage" src="Image/logoCoffee.png" alt="logo Ozahé">
         </section>
 
         <section id="LastPublication">
@@ -89,7 +90,7 @@
             <div id="presentationTextContainer">
                 <img id="presentationImage" src="Image/Derrière l'objectif.jpg" alt="À la une">
                 <!-- <div> -->
-                <h2 id="publicationSubtitle">« Il est l’heure de se mettre à table »</h2>
+                <h2 id="presentationSubtitle">« Il est l’heure de se mettre à table »</h2>
     
                 <p class="presentationText">
                     Ce n’est jamais facile de se présenter, surtout par écrit !

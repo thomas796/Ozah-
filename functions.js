@@ -1,47 +1,41 @@
-function knowMore() {
-    let viewport_height = (1*window.innerHeight)-60;
-    scroll(0, viewport_height);
-}
 
 
-const galeryArray = [['imageGalerie/image1.jpeg', 'voici la première image'],
-['imageGalerie/image2.jpeg', 'voici la deuxième image'],
-['imageGalerie/image3.jpeg', 'voici la troisième image'],
-['imageGalerie/image1.jpeg', 'voici la quatrième image'],
-['imageGalerie/image2.jpeg', 'voici la cinquième image'],
-['imageGalerie/image3.jpeg', 'voici la sixième image']]
+const galeryArray = [
+['image2.jpeg', 'Sur son lit de tomate', 'La mozzarella di Buffala et sa mini baguette'],
+['image3.jpeg', 'Test titre 3', 'voici la troisième image'],
+['image1.jpeg', 'Test titre 4', 'voici la quatrième image']
+]
+
+
+// function discover() {
+//     let viewport_height = (1*window.innerHeight)-60;
+//     scroll(0, viewport_height);
+// }
 
 
 function createCarousel() {
 
-
-    const carousel = document.getElementById("carousel")
     let item = convertInInt(localStorage.getItem("galeryItem"))
 
     if (item === null) {
         item = 0
     }
 
-    let image = document.createElement('img')
-    image.src = galeryArray[item][0]
-    image.style.height = "90%"
-    image.alt = 'image gallerie'
-    image.style.marginLeft = "100px"
-    image.style.objectFit = "scale-down"
-    carousel.append(image)
+    let imageGalerie = document.getElementById('imageGalerie')
+    imageGalerie.src = 'imageGalerie/' + galeryArray[item][0]
 
-    let description = document.createElement('p')
-    description.innerText = galeryArray[item][1]
-    description.style.width = "50%"
-    description.style.fontFamily = "MinionPro-Medium"
-    carousel.append(description)
+    let galerieSubtitle = document.getElementById('galerieSubtitle')
+    galerieSubtitle.textContent = '[' + galeryArray[item][1] + ']'
+
+    let descriptionGalerie = document.getElementById('descriptionGalerie')
+    descriptionGalerie.innerText = galeryArray[item][2]
 
 }
 
 
 
 function left() {
-    const carousel = document.getElementById("carousel")
+    const carousel = document.getElementById("carouselContentGalerie")
     carousel.style.transitionDuration = "180ms"
     carousel.style.opacity = "0.9"
 
@@ -59,7 +53,7 @@ function left() {
 }
 
 function right() {
-    const carousel = document.getElementById("carousel")
+    const carousel = document.getElementById("carouselContentGalerie")
     carousel.style.transitionDuration = "180ms"
     carousel.style.opacity = "0.9"
     let getItem = convertInInt(localStorage.getItem("galeryItem"))
@@ -67,7 +61,7 @@ function right() {
     let newposition = getItem+1
     if (newposition === galeryArray.length) {
         newposition = 0
-    } 
+    }
 
     localStorage.setItem("galeryItem", newposition)
     setTimeout(function(){

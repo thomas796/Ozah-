@@ -26,18 +26,28 @@
         </div>
     </header>
 
-    <main>
     <section id="galerie">
+        <div id="galerieTitleContainer">
+            <div id="galerieLine"></div>
+            <h1 id="galerieTitle">MISE EN BOUCHE</h1>
+        </div>
+
         <div id="carousel">
-    
-          <img onclick="left()" id="arrowCarouselLeft" src="Image/arrowCarousel.png" alt="button carousel">
-          <img onclick="right()" id="arrowCarouselRight" src="Image/arrowCarousel.png" alt="button carousel">
-  
+            <img onclick="left()" id="arrowCarouselLeft" src="Image/arrowCarousel.png" alt="button carousel">
+            <div id="carouselContentGalerie">
+                <img id="imageGalerie" src="" alt="">
+                <div id="galerieTextContainer">
+                    <h2 id="galerieSubtitle"></h2>
+                    <p id="descriptionGalerie"></p>
+                </div>
+            </div>
+            <img onclick="right()" id="arrowCarouselRight" src="Image/arrowCarousel.png" alt="button carousel">
         </div>
     </section>
 
-    </main>
-
+    <script>
+        createCarousel()
+    </script>
 
 
     <script>setFooter()</script>
@@ -45,9 +55,7 @@
 
     </body>
 
-    <script>
-        createCarousel()
-    </script>
+
     
     </html>
     

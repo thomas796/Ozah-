@@ -1,4 +1,37 @@
 #rencontres {
-    padding-top: 60px;
-    height: 100vh;
+    padding-top: 100px;
+    height: 400vh;
+
 }
+
+
+#rencontresTitleContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+}
+#rencontresTitle {
+    font-family: Bahnschrift;
+    font-size: x-large;
+    font-weight: 800;
+    color: #BA8F7D;
+    margin: 0px;
+    margin-left: 20px;
+    text-align: left;
+}
+#rencontresLine {
+    margin-left: 8%;
+    width: 150px;
+    height: 1px;
+    background-color: #BA8F7D;
+}
+
+#frameRecontres {
+    display: block;
+    margin-left: 150px;
+    width: 100%;
+    background-color: darkblue;
+    margin: auto;
+    height: calc(100% - 300px);
+}
+

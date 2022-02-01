@@ -1,37 +1,74 @@
 
 #galerie {
-    padding-top: 60px;
-    height: 100vh;
+    padding-top: 100px;
+    height: calc(100vh - 100px);
+}
+#galerieTitleContainer {
+    display: flex;
+    align-items: center;
+}
+#galerieTitle {
+    font-family: Bahnschrift;
+    font-size: x-large;
+    font-weight: 800;
+    color: #BA8F7D;
+    margin: 0px;
+    margin-left: 20px;
+    text-align: left;
+}
+#galerieLine {
+    margin-left: 8%;
+    width: 150px;
+    height: 1px;
+    background-color: #BA8F7D;
 }
 
 
+
 #carousel {
-    margin-top: 5px;
     width: 100%;
-    height: 80vh;
-    overflow: hidden;
+    margin-top: 30px;
+    height: calc(100vh - 200px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-
-
 #arrowCarouselLeft {
-    opacity: 50%;
+    opacity: 15%;
     width: 40px;
     height: 40px;
-    position: absolute;
-    transform: rotate(90deg);
-    left: 5%;
-    top: calc(50% - 20px);
+    transform: rotate(180deg);
+}
+#arrowCarouselRight {
+    opacity: 15%;
+    width: 40px;
+    height: 40px;
+}
+#carouselContentGalerie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+}
+#imageGalerie {
+    height: 100%;
+    object-fit: scale-down;
+    margin-right: 30px;
+}
+#galerieSubtitle {
+    font-family: Bahnschrift;
+    font-size: x-large;
+    font-weight: 800;
+    color: #915833;
+    text-align: left;
+}
+#galerieTextContainer {
+    display: flex;
+    flex-direction: column;
+}
+#descriptionGalerie {
+    font-family: Bahnschrift;
+    font-size: normal;
 }
 
-#arrowCarouselRight {
-    opacity: 50%;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    transform: rotate(-90deg);
-    left: calc(100% - 5% - 40px);
-    top: calc(50% - 20px);
-}

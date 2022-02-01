@@ -1,15 +1,19 @@
 
 #home {
-    height: 100vh;    
+    height: 90vh;    
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
     border-bottom: #BA8F7D solid 1px;
+    background-image: url("../Image/BackgroundHomePage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10vh;
 }
 #homeTitleContainer {
     margin-left: 10%;
-    width: 40%;
+    width: 60%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -19,23 +23,20 @@
 #homeText {
     font-family: Bahnschrift;
     font-style:bold;
-    color: rgb(0, 0, 0);
+    color: white;
     width: 100%;
-    font-size:medium;
-    font-weight:normal;
+    font-size: medium;
+    font-weight: normal;
     margin-bottom: 35px;
 }
 #homeTitle {
     font-family: "savoye";
-    color: #3D3E3F;
+    color: white;
     font-size: 110px;
     margin: 0px;
 }
-#homeImage {
-    margin-top: 60px;
-    width: 35%;
-    object-fit: scale-down;
-}
+
+
 
 
 #LastPublication {
@@ -110,13 +111,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 #newsTitleContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
 }
 .newsLine {
     width: 120px;
@@ -137,7 +139,7 @@
     display: flex;
     align-items: space-evenly;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
 }
 #newsContainer {
     display: flex;
@@ -148,7 +150,6 @@
 .newsImage {
     width: 70%;
     object-fit: scale-down;
-    margin-top: 20px;
     margin-bottom: 8px;
 }
 .newsSubtitle {
@@ -198,7 +199,7 @@
     height: 1px;
     background-color: #BA8F7D;
 }
-#publicationSubtitle {
+#presentationSubtitle {
     font-family: Bahnschrift;
     font-weight: lighter;
     font-style: italic;
@@ -206,7 +207,7 @@
     color: #BA8F7D;
 }
 #presentationTextContainer {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 #presentationImage {
     float: left;
