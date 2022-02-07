@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
     <script type="text/javascript" src="footer.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
     <title>Ozahé</title>
 </head>
 <body>
@@ -24,11 +25,30 @@
         </div>
     </header>
 
-    <main>
-        <section id="contacts">
-            <h1>Contact</h1>
-        </section>
-    </main>
+    <section id="contacts">
+        <div id="contactTitleContainer">
+            <div id="contactLine"></div>
+            <h1 id="contactTitle">ÉCHANGER, CUISINER, PHOTOGRAPHIE</h1>
+        </div>
+        <p id="contactText">Si tu souhaites partager tes recettes, participer à la rubrique « Rencontres en cuisine,
+            ou tout simplement papoter, n’hésite pas à me contacter &#9786
+        </p>
+
+        <div id="contactForm">
+            <input class="contactInput" name="name" type="text" id="contactName" placeholder="NOM PRÉNOM&#42">
+
+            <input class="contactInput" type="email" id="contactEmail" placeholder="MAIL&#42">
+
+            <textarea class="contactInput" id="contactMessage" placeholder="MESSAGE&#42"></textarea>
+
+            <p id="messageError"></p>
+
+            <button onclick="submitForm()" id="contactSubmit">Envoyer</button>
+
+        </div>
+
+
+    </section>
 
 
 

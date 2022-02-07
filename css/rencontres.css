@@ -41,6 +41,8 @@
     flex-direction: column;
     justify-items: flex-start;
     align-items: center;
+    text-decoration: none;
+    color: black
 }
 
 #episodeTitle {
@@ -86,12 +88,5 @@
 }
 
 .imageRencontres {
-    /* animation: 800ms linear 0s 1 imageLagApparition; */
     width: 80%;
 }
-
-/* @keyframes imageLagApparition {
-     0% { opacity: 0%; }
-     50% { opacity: 0%; }
-     100% {opacity: 100%;}
-} */

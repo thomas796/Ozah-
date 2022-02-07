@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/recettes.css">
     <script type="text/javascript" src="footer.js"></script>
+    <script type="text/javascript" src="recette.js"></script>
     <title>Ozahé</title>
 </head>
 <body>
@@ -24,16 +25,29 @@
         </div>
     </header>
 
-    <main>
-        <section id="recettes">
-            <h1>Recettes</h1>
-            <h1>Recettes</h1>
-            <h1 id="test">Recettes</h1>
-        </section>
-    </main>
+    <section id="recettes">
+        <div id="recettesTitleContainer">
+            <div id="recettesLine"></div>
+            <h1 id="recettesTitle">ET SI ON DÉGUSTAIT</h1>
+        </div>
+
+        <div id="recette-page">
+            <div id="recette-page-container">
+                <h2 id="recette-page-title">Aux saveurs de l’été<br> avec l’eau aromatisée<br>menthe/citron vert</h2>
+                <button id="recette-page-btn" >En cuisine</button>
+            </div>
+        </div>
+
+        <div id="recettesContainer">
+        </div> 
 
 
+        <a id="toMeet" href="contact.html">Partager une recette</a>
 
+    </section>
+
+
+    <script>setRecette()</script>
     <script>setFooter()</script>
 
     

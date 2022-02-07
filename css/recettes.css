@@ -1,8 +1,135 @@
 #recettes {
-    padding-top: 60px;
-    height: 100vh;
+    padding-top: 100px;
 }
 
-#test {
-    background-color: cornflowerblue;
+
+#recettesTitleContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
 }
+#recettesTitle {
+    font-family: Bahnschrift;
+    font-size: x-large;
+    font-weight: 800;
+    color: #BA8F7D;
+    margin: 0px;
+    margin-left: 20px;
+    text-align: left;
+}
+#recettesLine {
+    margin-left: 8%;
+    width: 150px;
+    height: 1px;
+    background-color: #BA8F7D;
+}
+
+#recette-page {
+    height: 40vmax;
+    width: 100%;
+    background-image: url('../Image/Recette - Page.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 70%;
+}
+
+#recette-page-container {
+    position: absolute;
+    margin-top: 35vh;
+    margin-left: 10%;
+}
+
+#recette-page-title {
+    font-family: Bahnschrift;
+    font-size: 26px;
+}
+#recette-page-btn {
+    width: 180px;
+    height: 45px;
+    background-color: #915833;
+    border: none;
+    font-family: Bahnschrift;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+}
+#recette-page-btn:hover {
+    opacity: 50%;
+}
+
+
+
+
+
+
+#recettesContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+#container {
+    width: 45%;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.recettesImage {
+    width: 70%;
+    object-fit: scale-down;
+    margin-bottom: 8px;
+}
+.recettesSubtitle {
+    color: #ABB4C2;
+    font-family: Bahnschrift;
+}
+.recettesText {
+    font-family: Bahnschrift;
+    font-size: medium;
+    width: 70%;
+}
+.recettesLink {
+    width: 70%;
+    text-align: left;
+    text-decoration: none;
+    font-family: Bahnschrift;
+    font-weight: lighter;
+    color: #915833;
+}
+
+#recetteEmpty {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 40%;
+}
+
+
+#toMeet {
+    display: block;
+    width: 400px;
+    height: 50px;
+    border: 3px solid #BA8F7D;
+    background-color: transparent;
+    margin-left: calc(50% - 200px);
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: #BA8F7D;
+    font-family: Bahnschrift;
+    font-size: x-large;
+}
+

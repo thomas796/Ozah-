@@ -1,10 +1,10 @@
 
 const episodeArray = [
-    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
-    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
-    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
-    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"],
-    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine"]
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine", "Rencontres/rencontres1.html"],
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine", "Rencontres/rencontres1.html"],
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine", "Rencontres/rencontres1.html"],
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine", "Rencontres/rencontres1.html"],
+    ["Image/Rencontres - Episode 1.jpg", "Épisode1", "Avec Antoine", "Rencontres/rencontres1.html"]
 ]
 
 
@@ -13,8 +13,9 @@ function setEpisode() {
 
     for (let [index, element] of episodeArray.entries()) {
   
-        let container = document.createElement('div')
+        let container = document.createElement('a')
         container.id = "container"
+        container.href = element[3]
         document.getElementById("rencontresContainer").appendChild(container)
         
         let image = document.createElement('img')
@@ -27,7 +28,7 @@ function setEpisode() {
         episodeTitle.id = "episodeTitle"
         container.appendChild(episodeTitle)
 
-        const name = document.createElement('h2')
+        const name = document.createElement('a')
         name.textContent = element[2]
         name.id = "episodeName"
         container.appendChild(name)

@@ -1,0 +1,20 @@
+#articleContainer {
+    min-height: 70vmax;
+    width: 95%;
+    max-width: 800px;
+    margin: auto;
+}
+
+
+.articleText {
+    font-family: Bahnschrift;
+    text-align: justify;
+
+}
+
+
+.articleImage {
+    width: 90%;
+    object-fit: scale-down;
+    margin-left: 5%;
+}
